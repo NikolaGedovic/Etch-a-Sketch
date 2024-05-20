@@ -1,3 +1,10 @@
+:root {
+  --bg-color: #153448;
+  --menu-bg-color: #3C5B6F;
+  --font-color: #EEEEEE;
+  --heading-font: #DDDDDD;
+}
+
 * {
   margin: 0;
   padding: 0;
