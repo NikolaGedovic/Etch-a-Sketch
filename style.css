@@ -1,8 +1,7 @@
 :root {
-  --bg-color: #3C5B6F;
+  --bg-color: #B3C8CF;
   --menu-bg-color: #153448;
   --font-color: #EEEEEE;
-  --heading-font: #DDDDDD;
   --menu-current-color: #577B8D;
 }
 
@@ -29,7 +28,7 @@ body {
 .heading {
   font-family: "Domine", sans-serif;
   font-size: 3rem;
-  color: var(--heading-font);
+  color: var(--menu-bg-color);
 }
 
 /* **************** Main **************** */
@@ -140,6 +139,10 @@ body {
   border: 2px solid var(--menu-bg-color);
 }
 
+.range::-webkit-slider-thumb:active {
+  background-color: var(--bg-color);
+}
+
 /* **************** Drawing Board **************** */
 
 .drawing-board {
@@ -162,7 +165,7 @@ body {
 
 .footer-link {
   text-decoration: none;
-  color: black;
+  color: var(--menu-bg-color);
   font-size: 1.25rem;
   font-family: "Domine", sans-serif;
   gap: .5rem;
