@@ -3,6 +3,7 @@
   --menu-bg-color: #153448;
   --font-color: #EEEEEE;
   --heading-font: #DDDDDD;
+  --menu-current-color: #577B8D;
 }
 
 * {
@@ -72,6 +73,30 @@ body {
   border-radius: 50%;
 }
 
+.color-mode,
+.rainbow-mode,
+.eraser,
+.clear-all {
+  border: 2px solid var(--font-color);
+  min-width: 13rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: .5rem;
+  color: var(--font-color);
+  cursor: pointer;
+  font-family: "Shadows Into Light";
+  font-size: 1.4rem;
+}
+
+.color-mode:hover,
+.rainbow-mode:hover,
+.eraser:hover,
+.clear-all:hover {
+  border: 2px solid var(--menu-current-color);
+}
+
 /* **************** Drawing Board **************** */
 
 .drawing-board {
@@ -95,7 +120,8 @@ body {
 .footer-link {
   text-decoration: none;
   color: black;
-  font-size: 1.3rem;
+  font-size: 1.25rem;
+  font-family: "Domine", sans-serif;
   gap: .5rem;
   display: flex;
   align-items: flex-end;
