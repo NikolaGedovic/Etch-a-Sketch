@@ -97,6 +97,14 @@ body {
 .clear-all:hover {
   border: 2px solid var(--menu-current-color);
   color: var(--menu-current-color);
+  font-weight: 700;
+}
+
+/* Class for active button that is added when user clicks */
+.active {
+  color: var(--font-color);
+  background-color: var(--menu-current-color);
+  font-weight: 500;
 }
 
 .grid-size-display {
@@ -110,7 +118,7 @@ body {
   min-width: 70%;
   display: flex;
   flex-direction: column;
-  gap: .8rem;
+  gap: 1rem;
 }
 
 .range {
@@ -127,7 +135,7 @@ body {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #BED7DC;
+  background-color: var(--font-color);
   cursor: pointer;
   border: 2px solid var(--menu-bg-color);
 }
